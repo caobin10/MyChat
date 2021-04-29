@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <!--<external-path path="Android/data/com.example.cursoradapter/" name="files_root" />-->
+    <!--<external-path-->
+        <!--name="camera_photos"-->
+        <!--path="."/>-->
+    <!--<external-path-->
+        <!--name="files_root"-->
+        <!--path="Android/data/com.datab.cn/"/>-->
+    <external-path
+        name="external_storage_root"
+        path="." />
+</paths>

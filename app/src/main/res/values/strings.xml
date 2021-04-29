@@ -1,4 +1,4 @@
 <resources>
-    <string name="app_name">我们</string>
+    <string name="app_name">Smackchat</string>
     <string name="hello_world">主要使用了一个定时器，在初始化时候</string>
 </resources>

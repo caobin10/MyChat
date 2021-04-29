@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="action_bar_search_contact">搜索</string>
+    <string name="attach">附加文件</string>
+    <string name="gallery">相册</string>
+    <string name="location">位置</string>
+    <string name="file">文件</string>
+    <string name="image_message_body">图片</string>
+    <string name="file_message_body">文件</string>
+</resources>

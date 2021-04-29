@@ -1,0 +1,80 @@
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (malloc) failed to allocate 1257296 bytes for Chunk::new
+# Possible reasons:
+#   The system is out of physical RAM or swap space
+#   In 32 bit mode, the process size limit was hit
+# Possible solutions:
+#   Reduce memory load on the system
+#   Increase physical memory or swap space
+#   Check if swap backing store is full
+#   Use 64 bit Java on a 64 bit OS
+#   Decrease Java heap size (-Xmx/-Xms)
+#   Decrease number of Java threads
+#   Decrease Java thread stack sizes (-Xss)
+#   Set larger code cache with -XX:ReservedCodeCacheSize=
+# This output file may be truncated or incomplete.
+#
+#  Out of Memory Error (allocation.cpp:390), pid=19336, tid=0x00000000000028ac
+#
+# JRE version: OpenJDK Runtime Environment (8.0_76-b03) (build 1.8.0_76-release-b03)
+# Java VM: OpenJDK 64-Bit Server VM (25.76-b03 mixed mode windows-amd64 compressed oops)
+# Failed to write core dump. Minidumps are not enabled by default on client versions of Windows
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x00000000167b9000):  JavaThread "C2 CompilerThread0" daemon [_thread_in_native, id=10412, stack(0x0000000018d80000,0x0000000018e80000)]
+
+Stack: [0x0000000018d80000,0x0000000018e80000]
+[error occurred during error reporting (printing stack bounds), id 0xc0000005]
+
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+
+
+Current CompileTask:
+C2:  12252 8198       4       com.android.utils.XmlUtils::append (540 bytes)
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+  0x000000001e984800 JavaThread "stdout" daemon [_thread_new, id=12628, stack(0x0000000000000000,0x0000000000000000)]
+  0x000000001e983000 JavaThread "stderr" daemon [_thread_in_native, id=9508, stack(0x0000000027be0000,0x0000000027ce0000)]
+  0x000000001aa18000 JavaThread "stdout" daemon [_thread_in_native, id=14904, stack(0x0000000027ae0000,0x0000000027be0000)]
+  0x000000001aa1c800 JavaThread "stderr" daemon [_thread_in_native, id=7504, stack(0x00000000279e0000,0x0000000027ae0000)]
+  0x000000001aa1c000 JavaThread "stdout" daemon [_thread_in_native, id=7744, stack(0x00000000278e0000,0x00000000279e0000)]
+  0x000000001aa1b000 JavaThread "stderr" daemon [_thread_in_native, id=17744, stack(0x00000000277e0000,0x00000000278e0000)]
+  0x000000001aa1a800 JavaThread "stdout" daemon [_thread_in_native, id=15616, stack(0x00000000276e0000,0x00000000277e0000)]
+  0x000000001aa1d800 JavaThread "stderr" daemon [_thread_in_native, id=13876, stack(0x00000000275e0000,0x00000000276e0000)]
+  0x000000001aa19000 JavaThread "stdout" daemon [_thread_in_native, id=6524, stack(0x00000000274e0000,0x00000000275e0000)]
+  0x000000001aa10800 JavaThread "stderr" daemon [_thread_in_native, id=9176, stack(0x0000000027170000,0x0000000027270000)]
+  0x000000001aa17800 JavaThread "stdout" daemon [_thread_in_native, id=16220, stack(0x00000000273e0000,0x00000000274e0000)]
+  0x000000001aa10000 JavaThread "stderr" daemon [_thread_in_native, id=8024, stack(0x00000000272e0000,0x00000000273e0000)]
+  0x000000001aa16800 JavaThread "stdout" daemon [_thread_in_native, id=17348, stack(0x0000000027070000,0x0000000027170000)]
+  0x000000001aa16000 JavaThread "stderr" daemon [_thread_in_native, id=11176, stack(0x0000000026f70000,0x0000000027070000)]
+  0x000000001aa0e800 JavaThread "Java2D Disposer" daemon [_thread_blocked, id=16388, stack(0x0000000026c70000,0x0000000026d70000)]
+  0x000000001aa13800 JavaThread "stdout" daemon [_thread_in_native, id=17400, stack(0x0000000026b70000,0x0000000026c70000)]
+  0x000000001aa12000 JavaThread "stderr" daemon [_thread_in_native, id=10624, stack(0x0000000025f20000,0x0000000026020000)]
+  0x000000001aa15000 JavaThread "png-cruncher_20" daemon [_thread_blocked, id=4724, stack(0x0000000026a70000,0x0000000026b70000)]
+  0x000000001aa11800 JavaThread "png-cruncher_19" daemon [_thread_blocked, id=8580, stack(0x0000000026970000,0x0000000026a70000)]
+  0x000000001aa0f000 JavaThread "png-cruncher_18" daemon [_thread_blocked, id=9828, stack(0x0000000026870000,0x0000000026970000)]
+  0x000000001aa14800 JavaThread "png-cruncher_17" daemon [_thread_blocked, id=4028, stack(0x0000000026770000,0x0000000026870000)]
+  0x000000001e21d800 JavaThread "png-cruncher_16" daemon [_thread_blocked, id=18592, stack(0x0000000026670000,0x0000000026770000)]
+  0x0000000020f2f800 JavaThread "png-cruncher_15" daemon [_thread_blocked, id=6228, stack(0x0000000026570000,0x0000000026670000)]
+  0x0000000020f2f000 JavaThread "png-cruncher_14" daemon [_thread_blocked, id=2544, stack(0x0000000026470000,0x0000000026570000)]
+  0x0000000020f2e000 JavaThread "png-cruncher_13" daemon [_thread_in_Java, id=6328, stack(0x0000000026370000,0x0000000026470000)]
+  0x0000000020f2d800 JavaThread "png-cruncher_12" daemon [_thread_in_native, id=15880, stack(0x0000000026270000,0x0000000026370000)]
+  0x0000000020f26000 JavaThread "png-cruncher_11" daemon [_thread_blocked, id=1632, stack(0x0000000026170000,0x0000000026270000)]
+  0x0000000020f2c000 JavaThread "stdout" daemon [_thread_in_native, id=4896, stack(0x0000000026070000,0x0000000026170000)]
+  0x0000000020f2b000 JavaThread "stderr" daemon [_thread_in_native, id=11852, stack(0x0000000025be0000,0x0000000025ce0000)]
+  0x0000000020f2a800 JavaThread "stdout" daemon [_thread_in_native, id=10964, stack(0x0000000025e20000,0x0000000025f20000)]
+  0x0000000020f27800 JavaThread "stderr" daemon [_thread_in_native, id=13372, stack(0x0000000025d20000,0x0000000025e20000)]
+  0x0000000020f2c800 JavaThread "stdout" daemon [_thread_in_native, id=14304, stack(0x0000000025ae0000,0x0000000025be0000)]
+  0x0000000020f29800 JavaThread "stderr" daemon [_thread_in_native, id=9488, stack(0x00000000259e0000,0x0000000025ae0000)]
+  0x0000000020f29000 JavaThread "stdout" daemon [_thread_in_native, id=15380, stack(0x00000000258e0000,0x00000000259e0000)]
+  0x0000000020f21800 JavaThread "stderr" daemon [_thread_in_native, id=8168, stack(0x00000000257e0000,0x00000000258e0000)]
+  0x0000000020f24800 JavaThread "stdout" daemon [_thread_in_native, id=12456, stack(0x00000000256e0000,0x00000000257e0000)]
+  0x0000000020f28000 JavaThread "stderr" daemon [_thread_in_native, id=2888, stack(0x00000000255e0000,0x00000000256e0000)]
+  0x0000000020f26800 JavaThread "stdout" daemon [_thread_in_native, id=6084, stack(0x00000000254e0000,0x00000000255e0000)]
+  0x0000000020f20800 JavaThread "stderr" daemon [_thread_in_native, id=14632, stack(0x00000000253e0000,0x00000000254e0000)
